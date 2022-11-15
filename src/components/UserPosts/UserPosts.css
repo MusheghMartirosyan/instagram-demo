@@ -1,0 +1,16 @@
+.user-posts{
+    /* width: 300px; */
+    /* height: 300px; */
+    position: relative;
+}
+.del-post{
+    position: absolute;
+    top: 5px;
+    right: 80px;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+}
+.user-posts:hover .del-post{
+    display: block;
+}

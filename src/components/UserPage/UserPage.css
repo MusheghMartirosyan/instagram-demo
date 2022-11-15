@@ -1,0 +1,39 @@
+.user-page{
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.user-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 250px;
+    position: relative;
+    top: 30px;
+}
+
+.user-name{
+    position: relative;
+    top: -130px;
+    left: 450px;
+}
+.user-name span{
+    margin-right: 30px;
+    font-size: 40px;
+}
+
+.user-bio{
+    position: relative;
+    top: -80px;
+    left: 450px;
+}
+.highlights{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}

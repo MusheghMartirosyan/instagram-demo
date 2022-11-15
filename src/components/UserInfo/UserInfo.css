@@ -1,0 +1,11 @@
+.user-info ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 35px;
+    position: relative;
+    top: -110px;
+    left: 450px;
+}
+.user-info{
+    width: 1000px;
+}

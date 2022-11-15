@@ -1,0 +1,23 @@
+.storys{
+    margin-top: 70px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.story img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid rgb(213, 1, 103);
+    margin: 5px 10px;
+}
+.story span{
+    display: block;
+}

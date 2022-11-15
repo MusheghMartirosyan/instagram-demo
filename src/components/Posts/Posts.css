@@ -1,0 +1,87 @@
+.posts{
+    text-align: center;
+    margin-top: 15px;
+    width: 500px;
+    /* height: 90vh; */
+    border: 1px solid  gray;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.post-info{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.post-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post-info span{
+    position: relative;
+    top: -13px;
+}
+.post img{
+    width: 100%;
+    max-height: 600px;
+    margin-top: 10px;
+}
+.info-menu-btn{
+    position: relative;
+    left: 300px
+}
+.post-icons{
+    display: flex;
+    align-items: center;
+}
+.post-icons span{
+    margin-left: 10px;
+
+}
+.save-post-btn{
+    position: relative;
+    left: 370px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.likes{
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.post-comments{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: start;
+}
+.post-comments p{
+    display: inline-block;
+}
+.post-comments span{
+    font-weight: bold;
+}
+.comment{
+    margin: 15px 10px;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+.comment input{
+    border: none;
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+.comment-smile{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.comment-form button{
+    border: none;
+    color: rgb(0, 69, 244);
+    font-weight: bold;
+    font-size: 16px;
+    background-color: inherit;
+}

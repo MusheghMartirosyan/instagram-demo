@@ -1,0 +1,11 @@
+
+.highlight img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    border: 3px solid rgba(128, 128, 128, 0.256);
+    margin: 5px 10px;
+}
+.highlight span{
+    display: block;
+}
