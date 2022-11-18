@@ -14,6 +14,7 @@ export const fetchUsers = createAsyncThunk(
             about: user.company.catchPhrase,
             password: user.address.city.toLowerCase(),
             name: user.name,
+            messages: [],
             posts: postsData.filter(post => post.albumId === user.id).map(post => ({
                 id: post.id,
                 img: post.url,

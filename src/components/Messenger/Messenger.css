@@ -7,3 +7,50 @@
     margin-top: 70px;
     border-radius: 4px;
 }
+.messenger .messUsers {
+    width: 100%;
+    height: 10%;
+}
+.messenger .desctop {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    overflow-y: auto;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.messengerMess {
+    max-width: 225px;
+    min-height: 30px;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+.messForm {
+    width: 100%;
+    height: 10%;
+}
+
+.messForm form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.messForm form input {
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #424242;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.messForm form button {
+    width: 25%;
+    height: 40px;
+    border: none;
+    background: orange;
+    color: #ffff;
+}

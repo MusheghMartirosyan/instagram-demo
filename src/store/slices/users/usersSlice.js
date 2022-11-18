@@ -1,12 +1,13 @@
 import { fetchUsers } from "./usersApi";
-
+import uniqid from 'uniqid'
 const { createSlice } = require("@reduxjs/toolkit");
 
 const userSlice = createSlice({
     name: 'users',
     initialState: {
         userData: [],
-        currentUser: null
+        currentUser: null,
+        botMess: null
     },
     reducers: {
         toggleCurrentUser(state, {payload}) {
@@ -26,6 +27,35 @@ const userSlice = createSlice({
                 comments: []
             })
         },
+        addMesseges(state,{payload}) {
+            state.currentUser.messages = [
+                ...state.currentUser.messages,
+                    {
+                        id: uniqid(),
+                        user: state.currentUser.username,
+                        txt: payload
+                    },
+                    {
+                        id: uniqid(),
+                        user: 'instabot',
+                        txt: state.botMess
+                    }
+            ]
+        },
+        addBotMess(state, {payload}) {
+            switch (payload) {
+                case 'hello':
+                    return{
+                        ...state,
+                        botMess: `Hello ${state.currentUser.username}`
+                    }
+                default:
+                    return{
+                        ...state,
+                        botMess: `es qez chem haskanum`
+                    }
+            }
+        },
         delUserPost(state, {payload}){
             state.currentUser.posts = [...state.currentUser.posts.filter(post => post.id !== payload)]
         }
@@ -41,5 +71,5 @@ const userSlice = createSlice({
 })
 
 export const selectUsers = state => state.users
-export const { toggleCurrentUser, exitCurrentUser, addNewUserPost, delUserPost } = userSlice.actions
+export const { toggleCurrentUser, exitCurrentUser, addNewUserPost, delUserPost, addMesseges, addBotMess } = userSlice.actions
 export const usersReducer = userSlice.reducer
